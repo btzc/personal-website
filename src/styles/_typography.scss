@@ -5,3 +5,8 @@ body {
   line-height: 1.7;
   padding: 3rem;
 }
+
+span.emphasis {
+  font-weight: 600;
+  color: $color-primary;
+}
