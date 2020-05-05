@@ -11,16 +11,8 @@ function App() {
   const [offsetTop, setOffsetTop] = useState(0);
 
   useEffect(() => {
-    let waiting = false;
     window.onscroll = function () {
-      if (waiting)
-        return;
-      waiting = true;
       handleScroll();
-
-      this.setTimeout(() => {
-        waiting = false;
-      }, 50);
     }
   });
 

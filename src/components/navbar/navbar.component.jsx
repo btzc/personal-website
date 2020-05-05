@@ -6,10 +6,10 @@ const Navbar = ({ offsetTop }) => {
   useEffect(() => {
     const projects = document.querySelector('#projects');
 
-    if (offsetTop < (projects.offsetTop * 0.75)) {
+    if (offsetTop < (projects.offsetTop * 0.50)) {
       const homeLink = document.querySelector('#home-link');
       toggleActive(homeLink);
-    } else if( offsetTop >= (projects.offsetTop * 0.75) && offsetTop < 1368) {
+    } else if( offsetTop >= (projects.offsetTop * 0.50) && offsetTop < 1368) {
       const projectsLink = document.querySelector('#projects-link');
       toggleActive(projectsLink);
     } else {
@@ -28,7 +28,7 @@ const Navbar = ({ offsetTop }) => {
     const section = document.querySelector(`#${e.innerText.toLowerCase()}`);
     window.scrollTo({
       left: 0,
-      top: (section.offsetTop > 1369 ? 1368 : section.offsetTop),
+      top: (section.offsetTop > 1369 ? 1370 : section.offsetTop),
       behavior: 'smooth'
     });
   }
