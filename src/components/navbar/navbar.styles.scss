@@ -1,11 +1,9 @@
 @import '../../styles/variables';
 
 .navbar {
-  font-size: 100%;
   width: 15vw;
   height: 100vh;
   position: fixed;
-  z-index: 2;
   top: 5rem;
 
   .logo {
@@ -26,6 +24,10 @@
     text-align: left;
     padding: 0 0 0 2rem;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     &:first-of-type {
       margin-top: 75%;
     }
@@ -40,5 +42,11 @@
     &:hover:not(.active) {
       color: #484539;
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
   }
 }

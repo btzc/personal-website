@@ -1,7 +1,12 @@
 .socials {
-  margin: 0;
   padding: 0;
   font-size: 1.7rem;
   letter-spacing: 0.2rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .socials {
+    font-size: 1.4rem;
+  }
 }

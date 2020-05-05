@@ -8,14 +8,15 @@
   background-position: middle;
   position: relative;
 
-  & .header-container {
+  .header-container {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 85%;
 
-    & .heading {
+    .heading {
       color: $color-white;
       margin-bottom: 3rem;
       letter-spacing: 0.2rem;
@@ -31,6 +32,29 @@
         font-size: 2.25rem;
         font-weight: 400;
       }
+
+      @media screen and (max-width: 600px) {
+        &-main {
+          display: block;
+          font-size: 5rem;
+          font-weight: 600;
+          letter-spacing: 0;
+          line-height: 1.25;
+          margin-bottom: 3rem;
+        }
+  
+        &-sub {
+          display: block;
+          font-size: 1.75rem;
+          font-weight: 400;
+        }
+      }
     }
+  }
+
+  @media screen and (max-width: 600px) {
+    .header-container {
+      width: 100%;
+    }    
   }
 }

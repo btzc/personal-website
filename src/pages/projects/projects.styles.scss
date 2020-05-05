@@ -8,3 +8,9 @@
     border: 0.05rem solid $color-primary;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .projects {
+    font-size: 1.4rem;
+  }
+}

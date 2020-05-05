@@ -5,20 +5,32 @@
   max-width: $grid-width;
 
   &:not(:last-child) {
-      margin-bottom: $gutter-vertical;
+    margin-bottom: $gutter-vertical;
   }
 
   @include clearfix;
 
   [class^='col-'] {
-      float: left;
+    float: left;
 
-      &:not(:last-child) {
-          margin-right: $gutter-horizontal;
-      }
+    &:not(:last-child) {
+        margin-right: $gutter-horizontal;
+    }
   }
-  
+
   .col-1-of-2 {
-      width: calc((100% - #{$gutter-horizontal}) / 2);
+    width: calc((100% - #{$gutter-horizontal}) / 2);
   }
+
+  @media screen and (max-width: 768px) {
+    [class^='col-'] {
+      float: none;
+    }
+
+    .col-1-of-2 {
+      margin-top: 2rem;
+      width: 100%;
+    }
+  }
+
 }
