@@ -1,0 +1,25 @@
+@import '../../styles/grid';
+
+.project {
+  text-align: left;
+
+  &:not(:last-child) {
+    padding-bottom: 5rem;
+  }
+
+  &:not(:first-child) {
+    padding-top: 2rem;
+  }
+
+  .technologies {
+    list-style-type:none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1.5rem;
+    max-width: 70%;
+
+    .technology-container {
+      display: flex;
+    }
+  }
+}

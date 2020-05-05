@@ -1,5 +1,4 @@
 @import '../../styles/variables';
-@import '../../styles/typography';
 
 .navbar {
   font-size: 100%;
@@ -8,21 +7,23 @@
   position: fixed;
   z-index: 2;
   top: 5rem;
-  text-align: left;
 
   .logo {
     font-size: 2.75rem;
     font-weight: 300;
     margin: 0 auto;
+    margin-bottom: 75%;
+    text-align: center;
   }
 
-  a {
+  div.link {
     font-size: 1.75rem;
     display: block;
     color: #b0b0b0;
     text-decoration: none;
     margin: 0.5rem 0 0.5rem 50%;
     max-width: 40%;
+    text-align: left;
     padding: 0 0 0 2rem;
 
     &:first-of-type {

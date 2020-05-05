@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+
+.contact {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 3rem; 
+  font-size: 1.7rem;
+  font-weight: 400;
+
+  .heading {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+  }
+}

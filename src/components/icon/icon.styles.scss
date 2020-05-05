@@ -1,0 +1,57 @@
+@import '../../styles/variables';
+
+.icon {
+  display: inline-block;
+
+  .circle {
+    font-size: 1.3rem;
+    margin: 0.2rem 1rem 0.2rem 0;
+    color: $color-primary;
+  }
+
+  .project-btn {
+    display: block;
+    text-decoration: none;
+    padding: 2rem 2rem 2rem 0;
+
+    .action {
+      margin: 0 0.5rem 0 0;
+    }
+  }
+
+  .orange {
+    color: $color-primary-muted;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  .animated {
+    transition: .15s ease-in-out;
+    
+    &:hover {
+      transform: translateY(-15%);
+    }  
+  }
+
+  .white {
+    color: $color-white-muted;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+  
+  .social-btn {
+    margin: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    
+    .action {
+      display: block;
+      margin: 0.5rem auto;
+    }
+  }
+}
