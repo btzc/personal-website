@@ -5,11 +5,12 @@ import './navbar.styles.scss';
 const Navbar = ({ offsetTop }) => {
   useEffect(() => {
     const projects = document.querySelector('#projects');
+    const contact = document.querySelector('#contact');
 
     if (offsetTop < (projects.offsetTop * 0.50)) {
       const homeLink = document.querySelector('#home-link');
       toggleActive(homeLink);
-    } else if( offsetTop >= (projects.offsetTop * 0.50) && offsetTop < 1350) {
+    } else if ( offsetTop >= (projects.offsetTop * 0.50) && offsetTop < (contact.offsetTop * 0.80)) {
       const projectsLink = document.querySelector('#projects-link');
       toggleActive(projectsLink);
     } else {

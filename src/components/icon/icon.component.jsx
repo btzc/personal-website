@@ -14,7 +14,7 @@ const Icon = ({type, url, icon, size, title, color, animated}) => {
     <div className='icon'>
       {
         url ? (
-          <a href={url} className={`${ type === 'social' ? 'social-btn' : 'project-btn'} ${ color === 'primary' ? 'orange' : 'white'} ${ animated  ? 'animated' : ''}`}>
+          <a href={url} className={`${ type === 'social' ? 'social-btn' : 'project-btn'} ${ color === 'primary' ? 'orange' : 'white'} ${ animated  ? 'animated' : ''}`} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon className='action' icon={icon} size={size} />
             <span>{title}</span>
           </a>

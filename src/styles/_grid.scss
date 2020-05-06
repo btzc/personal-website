@@ -19,10 +19,14 @@
   }
 
   .col-1-of-2 {
-    width: calc((100% - #{$gutter-horizontal}) / 2);
+    width: calc((100% - #{$gutter-horizontal}) / 3);
   }
 
-  @media screen and (max-width: 768px) {
+  .col-2-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) * 2 / 3);
+  }
+
+  @media screen and (max-width: 975px) {
     [class^='col-'] {
       float: none;
     }
@@ -31,6 +35,28 @@
       margin-top: 2rem;
       width: 100%;
     }
+
+    .col-2-of-2 {
+      margin-top: 2rem;
+      width: 100%;
+    }
   }
 
+  @media screen and (min-width: 976px) and (max-width: 1368px) {
+    [class^='col-'] {
+      float: left;
+  
+      &:not(:last-child) {
+          margin-right: $gutter-horizontal-mobile;
+      }
+    }
+
+    .col-1-of-2 {
+      width: calc((100% - #{$gutter-horizontal-mobile}) / 3);
+    }
+  
+    .col-2-of-2 {
+      width: calc((100% - #{$gutter-horizontal-mobile}) * 2 / 3);
+    }
+  }
 }

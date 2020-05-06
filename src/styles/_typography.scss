@@ -25,7 +25,7 @@ h1.section-heading {
   font-size: 4.5rem;
   max-width: 50%;
   border-bottom: 0.3rem solid $color-primary;
-  padding-bottom: 2rem;
+  padding-bottom: 2rem
 }
 
 @media screen and (max-width: 600px) {
@@ -38,6 +38,7 @@ h2.project-heading {
   font-weight: 600;
   text-align: left;
   font-size: 3.5rem;
+  padding: 1rem 0;
 }
 
 @media screen and (max-width: 600px) {

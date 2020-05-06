@@ -11,6 +11,12 @@
     padding-top: 2rem;
   }
 
+  img {
+    display: block;
+    height: 30rem;
+    width: 37rem;
+  }
+
   .technologies {
     list-style-type:none;
     display: grid;
@@ -23,9 +29,26 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 975px) {
+    img {
+      display: block;
+      height: 22rem;
+      width: 30rem;
+    }
     .technologies {
       max-width: 80%;
+    }
+  }
+
+  @media screen and (min-width: 976px) and (max-width: 1368px) {
+    img {
+      display: block;
+      height: 15rem;
+      width: 22rem;
+    }
+
+    .technologies {
+      max-width: 100%;
     }
   }
 }
